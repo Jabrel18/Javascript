@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<!--  Name: Jabrel Alexander
+      Date: 4/2/19
+-->
+<html lang="en">
+<head>
+    <title>Chapter 9, Example 3</title>
+</head>
+<body>
+    <script>
+		
+		var newText = document.createTextNode("My Heading");
+		var newElm = document.createElement("h1");
+		
+		newElm.appendChild(newText);
+		document.body.appendChild(newElm);
+		
+		newText = document.createTextNode("This is some text in a paragraph");
+		newElm = document.createElement("p");
+		
+		newElm.appendChild(newText);
+		document.body.appendChild(newElm);
+    </script>
+</body>
+</html>

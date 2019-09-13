@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+
+<html lang= "en">
+	<head>
+		<title> Chapter 5, Example 8 </title>
+	</head>
+	<body>
+		<script>
+// Jabrel Alexander
+// February 19, 2019
+// Program: Example 8 
+			
+		function createPerson(firstName, lastName) {
+			return {
+				firstName: firstName,
+				lastName: lastName,
+				getFullName: function() {
+					return this.firstName + " " + this.lastName
+					},
+					greet: function(person) {
+						alert("Hello, " + person.getFullName() +
+						". I'm " + this.getFullName());
+				}
+			};
+		}
+		
+		var johnDoe = createPerson("John", "Doe");
+		var janeDoe = createPerson("Jane", "Doe");
+		
+		
+		johnDoe.greet(janeDoe);
+			
+		</script>
+		
+	</body>
+</html>

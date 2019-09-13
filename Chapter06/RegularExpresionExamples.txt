@@ -1,0 +1,5 @@
+First Digit Code - ^(\+1 ?)?
+Area Code - (\(\d{3}\) ?\d{3}-\d{4})
+Extention - ( (x/xtn/...)?
+First digit and number - ^(1)?(\d{10})
+

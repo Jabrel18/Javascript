@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+
+<html lang= "en">
+	<head>
+		<title> Chapter 5, Exercise 1 </title>
+	</head>
+	<body>
+		<script>
+// Jabrel Alexander
+// February 19, 2019
+// Program:  Exercise 1
+			
+			var months = ["January", "February", "March", "April", "May",
+							"June", "July", "August", "September", "October", 
+							"November", "December"];
+			var nowDate = new Date();
+
+			nowDate.setMonth(nowDate.getMonth() + 12);
+			document.write("Date 12 months ahead is " + nowDate.getDate());
+			document.write(" " + months[nowDate.getMonth()]);
+			document.write(" " + nowDate.getFullYear());
+			
+		</script>
+		
+	</body>
+</html>

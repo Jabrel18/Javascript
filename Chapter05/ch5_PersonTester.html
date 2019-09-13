@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+
+<html lang= "en">
+	<head>
+		<title> Person Reference Type Example </title>
+	</head>
+	<body>
+		<script>
+// Jabrel Alexander
+// February 28, 2019
+// Program:
+			
+			function Person(first, last, age, gender, interest)
+			{
+				this.name = {
+					first: first, 
+					last: last
+				};
+			
+				this.age = age;
+				this.gender = gender;
+				this.interest = interest;
+				
+				function getInterests() {
+					var interests = ' ';
+					for (i = 0; i < interest.length; i++)
+					{
+						interests += interest[i] + ', ';
+					}
+					return interests;
+				}
+				this.bio = function() {
+					alert(this.name.first + ' ' + this.name.last + ' is ' + 
+					this.age +  ' years old. He likes ' + getInterests() + 
+					//this.interest[0] + ' and ' + this.interest[1] 
+					'.' );
+				};
+			
+			}
+			
+			var person1 = new Person("Jabrel", "Alexander", 23, "M", ["Football", "Videogames", "Exercising", "School"]);
+			person1.bio();
+			
+		</script>
+		
+	</body>
+</html>

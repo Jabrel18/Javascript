@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+
+<html lang= "en">
+	<head>
+		<title> Chapter 4, Exercise 2 </title>
+	</head>
+	<body>
+		<script>
+// Jabrel Alexander
+// January 24, 2019
+// Program: Exercise 2
+
+						function writeTimesTable (timesTable, timesByStart, timesByEnd) {
+				for (; timesByStart <= timesByEnd; timesByStart++){
+				
+				document.write(timesTable + " * " + timesByStart + " = " + timesByStart * timesTable + "<br />");
+				}
+			}
+			
+			
+			while ( secretNumber != -1){
+			var secretNumber = prompt("Any number besides -1 will repeat the 4 times table");
+			secretNumber = parseInt(secretNumber);
+			writeTimesTable(4, 4, 9);
+			}
+
+
+		</script>
+		
+	</body>
+</html>
