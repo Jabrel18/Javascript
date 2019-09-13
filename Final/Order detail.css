@@ -1,0 +1,14 @@
+body section {
+	float: right;
+	width: 750px;
+	border-color: #000000;
+	border-style: solid;
+}
+.input {
+	height: 87px;
+	width: 400px;
+}
+body a {
+	clear: left;
+	float: left;
+}
